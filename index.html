@@ -3,250 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HK Vitals - Trusted Health & Nutrition Supplements</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Kodungallur Sharjah | Cool Drinks & Refreshments</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-slate-50 font-sans text-slate-800">
-
-    <!-- Header / Navbar -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-2">
-                <div class="bg-teal-600 text-white font-bold text-xl px-3 py-1.5 rounded-lg tracking-wider">HK</div>
-                <span class="text-2xl font-black text-teal-800">Vitals</span>
-            </div>
-            <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
-                <a href="#categories" class="hover:text-teal-600 transition">Categories</a>
-                <a href="#products" class="hover:text-teal-600 transition">Best Sellers</a>
-                <a href="#about" class="hover:text-teal-600 transition">Why Us</a>
-                <a href="#contact" class="hover:text-teal-600 transition">Contact</a>
-            </nav>
-            <div class="flex items-center space-x-4">
-                <button class="relative p-2 text-slate-600 hover:text-teal-600">
-                    <i class="fa-solid fa-cart-shopping text-xl"></i>
-                    <span class="absolute top-0 right-0 bg-teal-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">2</span>
-                </button>
-                <a href="#products" class="hidden sm:inline-block bg-teal-600 hover:bg-teal-700 text-white font-semibold px-5 py-2.5 rounded-xl shadow-md transition">Shop Now</a>
-            </div>
-        </div>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Kodungallur Sharjah</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-teal-900 via-teal-800 to-slate-900 text-white py-20 lg:py-28">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <span class="bg-teal-500/20 text-teal-300 text-sm font-semibold px-4 py-1.5 rounded-full border border-teal-500/30">100% Trusted & Certified</span>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">Empowering Your Health Journey Every Day</h1>
-                <p class="text-lg text-slate-300 max-w-xl">Discover premium pharmaceutical-grade wellness, protein, and multivitamin supplements formulated for peak performance and vitality.</p>
-                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
-                    <a href="#products" class="bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold px-8 py-3.5 rounded-xl text-center shadow-lg transition">Explore Products</a>
-                    <a href="#about" class="bg-transparent hover:bg-white/10 text-white font-semibold px-8 py-3.5 rounded-xl text-center border border-white/20 transition">Learn More</a>
-                </div>
-            </div>
-            <div class="relative flex justify-center">
-                <div class="w-72 sm:w-96 h-72 sm:h-96 bg-teal-500/20 rounded-full absolute blur-3xl -z-10"></div>
-                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-3xl shadow-2xl text-center max-w-sm">
-                    <i class="fa-solid fa-pills text-teal-400 text-6xl mb-4"></i>
-                    <h3 class="text-2xl font-bold text-white mb-2">Multivitamin Gold</h3>
-                    <p class="text-slate-300 text-sm mb-6">Advanced formula with Ginseng & Multiminerals for active lifestyles.</p>
-                    <div class="text-2xl font-black text-teal-300 mb-4">₹699 <span class="text-sm text-slate-400 line-through">₹999</span></div>
-                    <button class="w-full bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold py-3 rounded-xl transition">Add to Cart</button>
-                </div>
-            </div>
+    <section id="home" class="hero">
+        <h1>Refreshing Tastes for Every Mood</h1>
+        <p>Visit us for the best shakes and cool drinks in town!</p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="item"><h3>Sharjah Shake</h3><p>Refreshing blend of bananas and nuts.</p></div>
+            <div class="item"><h3>Mango Blast</h3><p>Fresh mangoes with a creamy twist.</p></div>
+            <div class="item"><h3>Chocolate Oreo</h3><p>Rich and smooth chocolate delight.</p></div>
         </div>
     </section>
 
-    <!-- Categories Section -->
-    <section id="categories" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-slate-900">Browse By Category</h2>
-            <p class="text-slate-600 mt-2">Targeted solutions for your specific health goals</p>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition text-center border border-slate-100">
-                <div class="w-14 h-14 bg-teal-50 text-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl"><i class="fa-solid fa-heart-pulse"></i></div>
-                <h3 class="font-bold text-slate-800">Multivitamins</h3>
-                <p class="text-xs text-slate-500 mt-1">Daily Immunity & Energy</p>
-            </div>
-            <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition text-center border border-slate-100">
-                <div class="w-14 h-14 bg-teal-50 text-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl"><i class="fa-solid fa-dumbbell"></i></div>
-                <h3 class="font-bold text-slate-800">Protein & Fitness</h3>
-                <p class="text-xs text-slate-500 mt-1">Muscle Recovery & Growth</p>
-            </div>
-            <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition text-center border border-slate-100">
-                <div class="w-14 h-14 bg-teal-50 text-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl"><i class="fa-solid fa-bone"></i></div>
-                <h3 class="font-bold text-slate-800">Bone & Joint</h3>
-                <p class="text-xs text-slate-500 mt-1">Calcium & Collagen</p>
-            </div>
-            <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition text-center border border-slate-100">
-                <div class="w-14 h-14 bg-teal-50 text-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl"><i class="fa-solid fa-seedling"></i></div>
-                <h3 class="font-bold text-slate-800">Herbal & Ayurveda</h3>
-                <p class="text-xs text-slate-500 mt-1">Pure Natural Extracts</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" class="py-16 bg-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-end mb-12">
-                <div>
-                    <h2 class="text-3xl font-bold text-slate-900">Best Selling Supplements</h2>
-                    <p class="text-slate-600 mt-2">Clinically researched formulations loved by millions</p>
-                </div>
-                <a href="#" class="hidden sm:inline-block font-bold text-teal-600 hover:text-teal-700">View All &rarr;</a>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Product 1 -->
-                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-slate-200 flex flex-col justify-between">
-                    <div class="p-6">
-                        <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-md">Best Seller</span>
-                        <div class="h-40 flex items-center justify-center my-4">
-                            <i class="fa-solid fa-bottle-droplet text-teal-600 text-7xl"></i>
-                        </div>
-                        <h3 class="font-bold text-slate-800 text-lg">HK Vitals Fish Oil 1000mg</h3>
-                        <p class="text-xs text-slate-500 mt-1">60 Capsules • Omega 3 for Heart & Joint</p>
-                    </div>
-                    <div class="p-6 pt-0 flex items-center justify-between">
-                        <div>
-                            <span class="text-xs text-slate-400 block">Price</span>
-                            <span class="text-xl font-bold text-slate-900">₹749</span>
-                        </div>
-                        <button class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-xl text-sm font-semibold transition">Buy Now</button>
-                    </div>
-                </div>
-                <!-- Product 2 -->
-                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-slate-200 flex flex-col justify-between">
-                    <div class="p-6">
-                        <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-md">Popular</span>
-                        <div class="h-40 flex items-center justify-center my-4">
-                            <i class="fa-solid fa-pills text-teal-600 text-7xl"></i>
-                        </div>
-                        <h3 class="font-bold text-slate-800 text-lg">Multivitamin Gold Tablets</h3>
-                        <p class="text-xs text-slate-500 mt-1">90 Tablets • With Ginseng & Extracts</p>
-                    </div>
-                    <div class="p-6 pt-0 flex items-center justify-between">
-                        <div>
-                            <span class="text-xs text-slate-400 block">Price</span>
-                            <span class="text-xl font-bold text-slate-900">₹999</span>
-                        </div>
-                        <button class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-xl text-sm font-semibold transition">Buy Now</button>
-                    </div>
-                </div>
-                <!-- Product 3 -->
-                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-slate-200 flex flex-col justify-between">
-                    <div class="p-6">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2.5 py-1 rounded-md">New</span>
-                        <div class="h-40 flex items-center justify-center my-4">
-                            <i class="fa-solid fa-jar text-teal-600 text-7xl"></i>
-                        </div>
-                        <h3 class="font-bold text-slate-800 text-lg">Plant Protein Isolate</h3>
-                        <p class="text-xs text-slate-500 mt-1">500g • Chocolate Flavor, Vegan</p>
-                    </div>
-                    <div class="p-6 pt-0 flex items-center justify-between">
-                        <div>
-                            <span class="text-xs text-slate-400 block">Price</span>
-                            <span class="text-xl font-bold text-slate-900">₹1,499</span>
-                        </div>
-                        <button class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-xl text-sm font-semibold transition">Buy Now</button>
-                    </div>
-                </div>
-                <!-- Product 4 -->
-                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-slate-200 flex flex-col justify-between">
-                    <div class="p-6">
-                        <span class="bg-purple-100 text-purple-800 text-xs font-bold px-2.5 py-1 rounded-md">Essential</span>
-                        <div class="h-40 flex items-center justify-center my-4">
-                            <i class="fa-solid fa-capsules text-teal-600 text-7xl"></i>
-                        </div>
-                        <h3 class="font-bold text-slate-800 text-lg">Biotin Hair Supplement</h3>
-                        <p class="text-xs text-slate-500 mt-1">60 Tablets • For Hair & Skin Health</p>
-                    </div>
-                    <div class="p-6 pt-0 flex items-center justify-between">
-                        <div>
-                            <span class="text-xs text-slate-400 block">Price</span>
-                            <span class="text-xl font-bold text-slate-900">₹599</span>
-                        </div>
-                        <button class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-xl text-sm font-semibold transition">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Us Section -->
-    <section id="about" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <h2 class="text-3xl font-bold text-slate-900">Why Choose HK Vitals?</h2>
-                <p class="text-slate-600">We combine pharmaceutical precision with natural ingredients to deliver safe, effective, and lab-tested health supplements.</p>
-                <div class="space-y-4">
-                    <div class="flex items-start space-x-4">
-                        <div class="bg-teal-100 text-teal-700 p-3 rounded-xl mt-1"><i class="fa-solid fa-shield-check text-xl"></i></div>
-                        <div>
-                            <h4 class="font-bold text-slate-800 text-lg">100% Lab Verified</h4>
-                            <p class="text-sm text-slate-600">Every batch is rigorously tested for purity, heavy metals, and potency.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="bg-teal-100 text-teal-700 p-3 rounded-xl mt-1"><i class="fa-solid fa-flask text-xl"></i></div>
-                        <div>
-                            <h4 class="font-bold text-slate-800 text-lg">Scientifically Formulated</h4>
-                            <p class="text-sm text-slate-600">Developed by top nutritionists and pharmaceutical experts.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-teal-900 text-white p-10 rounded-3xl shadow-xl space-y-6">
-                <h3 class="text-2xl font-bold">Join Our Wellness Newsletter</h3>
-                <p class="text-teal-200 text-sm">Get expert health tips, diet plans, and exclusive discounts straight to your inbox.</p>
-                <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
-                    <input type="email" placeholder="Enter your email address" required class="w-full px-4 py-3 rounded-xl bg-teal-800 border border-teal-700 text-white placeholder-teal-300 focus:outline-none focus:border-teal-400">
-                    <button type="submit" class="w-full bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold py-3 rounded-xl transition">Subscribe Now</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="contact" class="bg-slate-900 text-slate-400 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-            <div class="space-y-4">
-                <div class="flex items-center space-x-2">
-                    <div class="bg-teal-600 text-white font-bold text-lg px-2.5 py-1 rounded-lg">HK</div>
-                    <span class="text-xl font-bold text-white">Vitals</span>
-                </div>
-                <p class="text-sm">Your trusted partner in health, wellness, and pharmaceutical nutrition.</p>
-            </div>
-            <div>
-                <h4 class="text-white font-bold mb-4">Quick Links</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="#categories" class="hover:text-white transition">Categories</a></li>
-                    <li><a href="#products" class="hover:text-white transition">Best Sellers</a></li>
-                    <li><a href="#about" class="hover:text-white transition">About Us</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-white font-bold mb-4">Customer Support</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
-                    <li><a href="#" class="hover:text-white transition">Shipping Policy</a></li>
-                    <li><a href="#" class="hover:text-white transition">Returns & Refunds</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-white font-bold mb-4">Connect With Us</h4>
-                <div class="flex space-x-4 text-xl">
-                    <a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="hover:text-white transition"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800 pt-6 text-center text-xs">
-            &copy; 2026 HK Vitals. All rights reserved. Created for Amal.
-        </div>
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Located in the heart of Kodungallur.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
