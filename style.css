@@ -1,0 +1,5 @@
+body { font-family: sans-serif; line-height: 1.6; margin: 0; }
+header { background: #333; color: #fff; padding: 1rem; }
+nav { display: flex; justify-content: space-between; align-items: center; }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
+.menu-item { border: 1px solid #ddd; padding: 10px; text-align: center; }
