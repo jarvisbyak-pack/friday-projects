@@ -1,0 +1,1 @@
+console.log("Kodungallur Sharja website loaded.");
