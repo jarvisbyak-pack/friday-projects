@@ -1,3 +1,8 @@
-// AK PACK FITNESS Script
-// This file is currently empty but serves as a placeholder to resolve 404 errors.
-console.log("AK PACK FITNESS initialized.");
+console.log("AK PACK Fitness website initialized.");
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+    });
+});
