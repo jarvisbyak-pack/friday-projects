@@ -1,49 +1,37 @@
-const canvas = document.getElementById('matrix');
+const canvas = document.getElementById('matrix-bg');
 const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-const chars = '01';
-const fontSize = 16;
-const columns = canvas.width / fontSize;
-const drops = Array(Math.floor(columns)).fill(1);
-
-function drawMatrix() {
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = '#0F0';
-    ctx.font = fontSize + 'px monospace';
-    drops.forEach((y, i) => {
-        const text = chars[Math.floor(Math.random() * chars.length)];
-        ctx.fillText(text, i * fontSize, y * fontSize);
-        if (y * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
-        drops[i]++;
+canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+const letters = Array(256).fill(1);
+function draw() {
+    ctx.fillStyle = 'rgba(0,0,0,0.05)'; ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#0f0';
+    letters.map((y, index) => {
+        const text = String.fromCharCode(3e4 + Math.random() * 33);
+        ctx.fillText(text, index * 10, y);
+        letters[index] = y > 758 + Math.random() * 1e4 ? 0 : y + 10;
     });
 }
-setInterval(drawMatrix, 50);
+setInterval(draw, 33);
 
 let isListening = true;
-const statusEl = document.getElementById('listening-status');
-
-window.addEventListener('keydown', (e) => {
+const status = document.getElementById('status-indicator');
+document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         isListening = !isListening;
-        statusEl.innerText = isListening ? "SYSTEM: ACTIVE [LISTENING...]" : "SYSTEM: IDLE [PRESS ESC TO WAKE]";
+        status.innerText = isListening ? 'SYSTEM: ACTIVE [LISTENING...]' : 'SYSTEM: IDLE';
     }
 });
 
-function typeResponse(text, element) {
-    let i = 0;
-    element.innerText = "";
-    function loop() {
-        if (i < text.length) {
-            element.innerText += text.charAt(i);
-            i++;
-            setTimeout(loop, 50);
-        }
+const output = document.getElementById('chat-output');
+function typeResponse(text, i = 0) {
+    if (i < text.length) {
+        output.innerHTML += text.charAt(i);
+        setTimeout(() => typeResponse(text, i + 1), 50);
     }
-    loop();
 }
-
-// Simulated interaction
-setTimeout(() => typeResponse("FRIDAY ONLINE. AWAITING INPUT...", document.getElementById('chat-output')), 1000);
+document.getElementById('user-input').addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        output.innerHTML = '';
+        typeResponse("Processing request...");
+    }
+});
