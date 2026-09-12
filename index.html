@@ -3,55 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AK PACK Fitness | Luxury Performance</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>FRIDAY | Neural Interface</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">AK PACK</div>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">Philosophy</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Elite Performance. <br>Refined Luxury.</h1>
-            <p>Elevate your potential with The Pack.</p>
-            <a href="#services" class="cta">Explore Services</a>
+    <canvas id="matrix-canvas"></canvas>
+    <div class="overlay">
+        <div class="black-hole"></div>
+        <div class="interface-container">
+            <h1 id="status-text">FRIDAY ACTIVE</h1>
+            <div id="chat-box"></div>
+            <input type="text" id="user-input" placeholder="Initiate query..." autocomplete="off">
         </div>
-    </section>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="image-placeholder"></div>
-                <h3>Personal Training</h3>
-                <p>Tailored guidance for peak results.</p>
-            </div>
-            <div class="service-card">
-                <div class="image-placeholder"></div>
-                <h3>Group Sessions</h3>
-                <p>Driven by the power of The Pack.</p>
-            </div>
-            <div class="service-card">
-                <div class="image-placeholder"></div>
-                <h3>Recovery Suite</h3>
-                <p>Restorative luxury for athletes.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contact">
-        <p>&copy; 2023 AK PACK Fitness. [Placeholder for Address/Contact]</p>
-    </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
