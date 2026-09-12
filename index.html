@@ -2,22 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRIDAY AI - Neural Core</title>
+    <title>FRIDAY | Black Hole AI</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <canvas id="matrix-rain"></canvas>
-    <div id="interface">
-        <div class="black-hole-container">
-            <div id="black-hole"></div>
-            <div id="audio-wave"></div>
-        </div>
-        <div id="chat-container">
-            <div id="status-indicator">SYSTEM: ACTIVE [LISTENING...]</div>
-            <div id="response-box">Awaiting command...</div>
-            <input type="text" id="user-input" placeholder="Execute command..." autofocus>
-        </div>
+    <canvas id="matrix"></canvas>
+    <div id="ui-layer">
+        <div class="black-hole"></div>
+        <div id="listening-status">SYSTEM: ACTIVE [LISTENING...]</div>
+        <div id="chat-output"></div>
     </div>
     <script src="script.js"></script>
 </body>
