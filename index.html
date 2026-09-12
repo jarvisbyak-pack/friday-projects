@@ -9,10 +9,14 @@
 <body>
     <canvas id="matrix-rain"></canvas>
     <div id="interface">
-        <div class="black-hole"></div>
+        <div class="black-hole-container">
+            <div id="black-hole"></div>
+            <div id="audio-wave"></div>
+        </div>
         <div id="chat-container">
+            <div id="status-indicator">SYSTEM: ACTIVE [LISTENING...]</div>
             <div id="response-box">Awaiting command...</div>
-            <input type="text" id="user-input" placeholder="Execute command...">
+            <input type="text" id="user-input" placeholder="Execute command..." autofocus>
         </div>
     </div>
     <script src="script.js"></script>
