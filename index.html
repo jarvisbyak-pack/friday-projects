@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRIDAY | Neural Interface</title>
+    <title>FRIDAY AI - Neural Core</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <canvas id="matrix-canvas"></canvas>
-    <div class="overlay">
+    <canvas id="matrix-rain"></canvas>
+    <div id="interface">
         <div class="black-hole"></div>
-        <div class="interface-container">
-            <h1 id="status-text">FRIDAY ACTIVE</h1>
-            <div id="chat-box"></div>
-            <input type="text" id="user-input" placeholder="Initiate query..." autocomplete="off">
+        <div id="chat-container">
+            <div id="response-box">Awaiting command...</div>
+            <input type="text" id="user-input" placeholder="Execute command...">
         </div>
     </div>
     <script src="script.js"></script>
