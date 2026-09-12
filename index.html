@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FRIDAY | Black Hole AI</title>
+    <title>Friday | Black Hole Matrix</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <canvas id="matrix"></canvas>
-    <div id="ui-layer">
-        <div class="black-hole"></div>
-        <div id="listening-status">SYSTEM: ACTIVE [LISTENING...]</div>
+    <canvas id="matrix-bg"></canvas>
+    <div id="interface">
+        <div id="black-hole">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+        <div id="status-indicator">SYSTEM: ACTIVE [LISTENING...]</div>
         <div id="chat-output"></div>
+        <input type="text" id="user-input" placeholder="Initiate sequence...">
     </div>
     <script src="script.js"></script>
 </body>
