@@ -12,7 +12,12 @@
         <div class="black-hole" id="blackHole"></div>
         <div id="system-status">SYSTEM: ACTIVE [LISTENING...]</div>
         <div id="chat-output"></div>
-        <input type="text" id="user-input" placeholder="Enter command..." autofocus>
+        <div class="input-group">
+            <input type="text" id="user-input" placeholder="Enter command..." autofocus>
+            <label for="file-upload" class="file-label">UPLOAD</label>
+            <input type="file" id="file-upload" style="display: none;">
+        </div>
+        <div id="drop-zone">Drop files to analyze</div>
     </div>
     <script src="script.js"></script>
 </body>
