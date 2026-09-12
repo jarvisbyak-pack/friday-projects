@@ -1,16 +1,6 @@
-body {
-    background-color: #050505;
-    color: #e0e0e0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 20px;
-}
-#galaxy-overlay {
-    max-width: 800px;
-    margin: 0 auto;
-}
-#star-viewer {
-    border: 1px solid #444;
-    padding: 20px;
-    margin-top: 20px;
-}
+body { background-color: #050505; color: #00ffcc; font-family: 'Courier New', monospace; margin: 20px; }
+#content { display: flex; gap: 20px; }
+#star-list { list-style: none; padding: 0; min-width: 200px; }
+#star-list li { cursor: pointer; padding: 10px; border: 1px solid #00ffcc; margin-bottom: 5px; }
+#star-list li:hover { background: #004433; }
+#star-details { border: 1px solid #00ffcc; padding: 20px; width: 100%; }
