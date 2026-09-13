@@ -1,0 +1,81 @@
+/* AK PACK Fitness Styling */
+:root {
+    --primary-red: #FF0000;
+    --bg-black: #000000;
+    --charcoal: #1a1a1a;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-black);
+    color: var(--white);
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background: var(--charcoal);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--primary-red);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header {
+    text-align: center;
+    padding: 100px 5%;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--primary-red);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.promo-banner {
+    background-color: var(--primary-red);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding: 50px 5%;
+}
+
+.plan {
+    border: 1px solid var(--primary-red);
+    padding: 20px;
+    margin: 10px 0;
+}
