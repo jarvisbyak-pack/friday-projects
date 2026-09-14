@@ -1,0 +1,17 @@
+{
+  "name": "F.R.I.D.A.Y. V2 - Integrated Architecture",
+  "nodes": [
+    { "id": "trigger-1", "name": "Primary Agent Trigger", "type": "n8n-nodes-base.webhook", "typeVersion": 1, "position": [250, 300], "parameters": { "httpMethod": "POST", "path": "primary-agent-trigger", "options": {} } },
+    { "id": "log-1", "name": "Log Interaction", "type": "n8n-nodes-base.noOp", "typeVersion": 1, "position": [450, 300], "parameters": {} },
+    { "id": "llm-1", "name": "LLM Orchestrator", "type": "n8n-nodes-base.aiChain", "typeVersion": 1, "position": [650, 300], "parameters": { "prompt": "Analyze the incoming task and route it." } },
+    { "id": "trigger-2", "name": "Evolution Engine Trigger", "type": "n8n-nodes-base.webhook", "typeVersion": 1, "position": [250, 500], "parameters": { "httpMethod": "POST", "path": "evolution-engine-trigger", "options": {} } },
+    { "id": "code-1", "name": "Log Analysis Node", "type": "n8n-nodes-base.code", "typeVersion": 1, "position": [450, 500], "parameters": { "jsCode": "// Analyze repository logs for structural improvements" } },
+    { "id": "resp-1", "name": "Output Patch", "type": "n8n-nodes-base.webhookResponse", "typeVersion": 1, "position": [650, 500], "parameters": { "responseBody": "{\"action\": \"refactor\", \"status\": \"ready\"}" } }
+  ],
+  "connections": {
+    "Primary Agent Trigger": { "main": [[ { "node": "Log Interaction", "type": "main", "index": 0 } ]] },
+    "Log Interaction": { "main": [[ { "node": "LLM Orchestrator", "type": "main", "index": 0 } ]] },
+    "Evolution Engine Trigger": { "main": [[ { "node": "Log Analysis Node", "type": "main", "index": 0 } ]] },
+    "Log Analysis Node": { "main": [[ { "node": "Output Patch", "type": "main", "index": 0 } ]] }
+  }
+}
