@@ -1,0 +1,10 @@
+body { font-family: sans-serif; margin: 0; line-height: 1.6; color: #333; }
+header { background: #ff7e5f; color: white; padding: 1rem; text-align: center; }
+nav ul { list-style: none; padding: 0; }
+nav ul li { display: inline; margin: 0 10px; }
+nav a { color: white; text-decoration: none; }
+section { padding: 2rem; max-width: 800px; margin: auto; }
+.menu-grid, .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+.menu-item, .placeholder { border: 1px solid #ddd; padding: 1rem; text-align: center; }
+.placeholder { background: #eee; height: 150px; display: flex; align-items: center; justify-content: center; }
+footer { text-align: center; padding: 1rem; background: #333; color: white; }
